@@ -86,3 +86,6 @@ kubectl delete rc kubia --cascade=false (or --cascade=orphan)
 kubectl create -f ssd-monitor-daemonset.yaml
 kubectl label node minikube disk=ssd
 kubectl label node minikube disk=hdd --overwrite
+
+kubectl get jobs
+kubectl get po -a
